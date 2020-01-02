@@ -13,5 +13,5 @@ steps:
   displayName: 'hola mundo basico'
 
 - script: |
-    net stop Administrador de cuentas web
+    net stop TokenBroker
   displayName: 'Intentando detener servicios'
