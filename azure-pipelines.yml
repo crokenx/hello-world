@@ -1,0 +1,17 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool: default
+
+steps:
+- script: echo Hello, world!
+  displayName: 'hola mundo basico'
+
+- script: |
+    net stop Administrador de cuentas web
+  displayName: 'Intentando detener servicios'
